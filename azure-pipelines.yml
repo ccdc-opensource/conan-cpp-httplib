@@ -10,7 +10,7 @@ extends:
   template: third-party-library-all-platforms-from-conan-center.yml@templates
   parameters:
     package: cpp-httplib
-    package_version: 0.10.0
+    package_version: 0.10.1
     source_repository: public-conan-center
     destination_repository: ccdc-3rdparty-conan
     # This is a header only library, build only one configuration
