@@ -1,0 +1,18 @@
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      name: ccdc-opensource/conan-azure-devops
+      ref: refs/heads/development
+      endpoint: github
+
+extends:
+  template: third-party-library-all-platforms-from-conan-center.yml@templates
+  parameters:
+    package: cpp-httplib
+    package_version: 0.10.0
+    source_repository: public-conan-center
+    destination_repository: ccdc-3rdparty-conan
+    # This is a header only library, build only one configuration
+    build_types:
+      - Release
